@@ -1,0 +1,280 @@
+/* importações*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+/*Corpo geral*/
+
+body{
+    background: #FFFFFF url("Imagens/backgroundNaruto.png") no-repeat right top fixed;
+    background-size: 1500px;
+}
+
+/*Cabeçalho geral*/
+
+body header{
+
+    /*Alinhamento e tamanhos*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    height: 70px;
+    left: 70px;
+    bottom: 70px;
+    right: 70px;
+    
+    /*Texto*/
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+/*Imagem do cabeçalho*/
+
+body header img{
+    /*Alinhamento e tamanhos*/
+    margin-left: 120px;
+}
+
+/*Navegação do cabeçalho*/
+
+body header nav{
+        /*Alinhamento e tamanhos*/
+        display: flex;
+        margin-right: 120px;
+        gap: 30px;
+
+        /*Texto*/
+
+}
+/*Os links da NAV*/
+body header nav a{
+    /*Alinhamento*/
+
+    /*Texto*/
+    text-decoration: none;
+    color: #4D4D4D;
+    font-size: 20px;
+
+}
+
+/*Main*/
+
+/*Seção 1 - Quem é Uzumaki Naruto*/
+body main section.Naruto{
+        /*Alinhamento e tamanhos*/
+        display: flex;
+        margin-top: 0px; /*Espaço externo no topo*/
+        margin-right: 120px;/*Espaco externo a direita*/
+        margin-bottom: 0px; /*Espaco externo em baixo*/
+        margin-left: 120px; /*Espaço externo a esquerda*/
+        padding-top: 5px; /*Espaço interno topo*/
+        padding-bottom:10px; /*Espaço interno  em baixo*/
+        border-top-left-radius: 10px; /*borda de cima esquerda arredondada*/
+        border-top-right-radius: 10px; /*borda de cima a direita arredondada*/
+        height: 300px; /*tamanho do quadro*/
+        width: 1110px;
+
+        /*Cores e textos*/
+    background-color:#F7C003;
+}
+/*Foto perfil Naruto*/
+body main section.Naruto img#FotoNaruto{
+    margin-left: 120px;
+    height: 250px;
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Palavra "quem é"*/
+body main section.Naruto h1#Menor{
+    /*Alinhamento*/
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 30px;
+
+    /*Texto*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: #4D4D4D;
+}
+
+/*Palavra Uzumaki Naruto*/
+body main section.Naruto h1#Maior{
+    display: flex;
+    line-height: 105px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 30px;
+
+    /*Texto*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 130px;
+    color: #4D4D4D;
+}
+
+/*Separador*/
+body main section.Naruto div#Separador{
+    display: flex;
+    margin: 20px 20px 20px 20px;
+    padding: 5px 5px 5px 5px;
+    background-color: #4D4D4D;
+}
+
+/*Biografia*/
+
+body main section.Naruto div#Biografia{
+
+    /*Alinhamento*/
+    display: list-item;
+    list-style: none;
+    margin: 20px 10px 10px 10px;
+
+    /*Texto*/
+    color: #4D4D4D;
+    font-family: 'Roboto Slab', serif;
+    line-height: 15px;
+
+}
+
+/*Marca Texto*/
+
+mark{
+    background-color:#ffff00; color: #4D4D4D;
+}
+
+/*Bloco geral de Texto*/
+body main section.Texto{
+
+    /*Alinhamento*/
+    display: inline-block;
+    background: #FFFFFF;
+    margin-top: 0px; /*Espaço externo no topo*/
+    margin-right: 120px;/*Espaco externo a direita*/
+    margin-bottom: 0px; /*Espaco externo em baixo*/
+    margin-left: 120px; /*Espaço externo a esquerda*/
+    padding-top: 5px; /*Espaço interno topo*/
+    padding-bottom:20px; /*Espaço interno  em baixo*/
+    width: 1110px;
+    color: #4D4D4D;
+}
+
+/*Texto introdutório*/
+body main section.Texto article#TextoUm{
+    /*Alinhamento*/
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    line-height: 25px;
+
+    /*Texto*/
+    font-family: 'Roboto Slab', serif;
+}
+/*Segundo texto*/
+body main section.Texto article#TextoDois{
+        /*Alinhamento*/
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 10px;
+        text-align: justify;
+        line-height: 25px;
+        margin-right: 10px;
+    
+        /*Texto*/
+        font-family: 'Roboto Slab', serif;
+}
+/*Imagem ao lado do segundo texto*/
+body main section.Texto img{
+    display: flex;
+    padding: 60px 10px 20px 30px;
+    height: 350px;
+    width: 350px;
+}
+/*Terceiro Texto*/
+body main section.Texto article#TextoTres{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    line-height: 25px;
+
+    /*Texto*/
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Bloco geral de vídeo*/
+body main section.Video {
+            /*Alinhamento e tamanhos*/
+            display: inline-block;
+            margin-top: 0px; /*Espaço externo no topo*/
+            margin-right: 120px;/*Espaco externo a direita*/
+            margin-bottom: 0px; /*Espaco externo em baixo*/
+            margin-left: 120px; /*Espaço externo a esquerda*/
+            padding-top: 0px; /*Espaço interno topo*/
+            padding-bottom:10px; /*Espaço interno  em baixo*/
+            height: 300px; /*tamanho do quadro*/
+            width: 1110px;
+    
+            /*Cores e textos*/
+        background-color:#F7C003;
+}
+/*Nome vídeo*/
+body main section.Video p#NomeVideo{
+        /*Alinhamento*/
+        display: flex;
+        padding: 0px 0px 0px 0px;
+        margin: 20px 0px 0px 30px;
+    
+        /*Texto*/
+        font-family: 'Bebas Neue', cursive;
+        font-size: 50px;
+        color: #4D4D4D;
+}
+/*Videos do Youtube*/
+body main section.Video div{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+}
+
+/*Footer*/
+
+/*Base geral do footer*/
+
+footer{
+    display: inline-block;
+    margin-top: 0px; /*Espaço externo no topo*/
+    margin-right: 120px;/*Espaco externo a direita*/
+    margin-bottom: 0px; /*Espaco externo em baixo*/
+    margin-left: 120px; /*Espaço externo a esquerda*/
+    padding-top: 0px; /*Espaço interno topo*/
+    padding-bottom:10px; /*Espaço interno  em baixo*/
+    height: 200px; /*tamanho do quadro*/
+    width: 1110px;
+    line-height: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    /*Cores e textos*/
+background-color: #78323D;
+}
+footer p#Titulo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 30px;
+}
+footer p#Subtitulo{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 30px;
+}
+
