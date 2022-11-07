@@ -24,6 +24,7 @@ body header{
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    gap: 620px;
     /*height: 70px;
     left: 70px;
     bottom: 70px;
