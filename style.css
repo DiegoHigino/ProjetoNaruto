@@ -10,10 +10,12 @@
 body{
     background: #FFFFFF url("Imagens/backgroundNaruto.png") no-repeat right top fixed;
 
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 600px;
     min-width: 300px;
     max-width: 1400px;
+    margin: auto;
+    display: block;
 }
 
 /*Cabeçalho geral*/
