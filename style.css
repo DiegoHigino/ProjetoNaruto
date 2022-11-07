@@ -4,17 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-
 /*Corpo geral*/
 
 body{
     background: #FFFFFF url("Imagens/backgroundNaruto.png") no-repeat right top fixed;
-min-width: 300px;
-max-width: 1400px;
-min-height: 700px;
-max-height: 1500px;
-margin: auto;
-padding: 20px;
+    min-width: 300px;
+    max-width: 1400px;
+    min-height: 700px;
+    max-height: 1500px;
+    margin: auto;
+    padding: 20px;
 }
 
 /*Cabeçalho geral*/
@@ -31,19 +30,13 @@ body header{
     /*gap: 620px;*/
     left: 70px;
     bottom: 70px;
-    right: 70px;*/
+    right: 70px;
     
     /*Texto*/
     font-family: 'Bebas Neue', cursive;
 
 }
 
-/*Imagem do cabeçalho*/
-
-body header img{
-    /*Alinhamento e tamanhos*/
-    /*margin-left: 120px;*/
-}
 
 /*Navegação do cabeçalho*/
 
@@ -73,12 +66,7 @@ body header nav a{
 body main section.Naruto{
         /*Alinhamento e tamanhos*/
         display: flex;
-        /*margin-top: 0px; 
-        margin-right: 120px;
-        margin-bottom: 0px;
-        margin-left: 120px;*/
-        padding-top: 5px;
-        padding-bottom:10px; 
+        justify-content: space-between; 
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         height: 300px;
@@ -89,36 +77,55 @@ body main section.Naruto{
 }
 /*Foto perfil Naruto*/
 body main section.Naruto img#FotoNaruto{
-    margin-left: 120px;
+    /*margin-left: 120px;*/
     height: 250px;
     width: 250px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
-/*Palavra "quem é"*/
-body main section.Naruto h1#Menor{
-    /*Alinhamento*/
-    display: flex;
-    padding: 0px 0px 0px 0px;
-    margin: 20px 0px 0px 30px;
+body main section.Naruto div.Geral{
+    height: 250px;
+    width: 300px;
+    padding: 30px 10px 10px 10px;
+    justify-content: center;
 
-    /*Texto*/
+}
+
+body main section.Naruto div.Geral p#Um{
+    display: flex;
+    margin: 0px;
+    height: 55px;
+    width: 250px;
+    font-weight:bolder;
+
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
     color: #4D4D4D;
 }
-
-/*Palavra Uzumaki Naruto*/
-body main section.Naruto h1#Maior{
+body main section.Naruto div.Geral p#Dois{
     display: flex;
-    line-height: 105px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 30px;
+    margin: 0px;
+    height: 90px;
+    width: 300px;
+    font-weight:bolder;
+    align-items: center;
 
-    /*Texto*/
     font-family: 'Bebas Neue', cursive;
-    font-size: 130px;
+    font-size: 100px;
+    color: #4D4D4D;
+}
+
+body main section.Naruto div.Geral p#Tres{
+    display: flex;
+    margin: 0px;
+    height: 90px;
+    width: 300px;
+    font-weight:bolder;
+    align-items: center;
+
+
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
     color: #4D4D4D;
 }
 
@@ -157,14 +164,9 @@ body main section.Texto{
 
     /*Alinhamento*/
     display: inline-block;
-    background: #FFFFFF;
-    margin-top: 0px; /*Espaço externo no topo*/
-    margin-right: 120px;/*Espaco externo a direita*/
-    margin-bottom: 0px; /*Espaco externo em baixo*/
-    margin-left: 120px; /*Espaço externo a esquerda*/
-    padding-top: 5px; /*Espaço interno topo*/
-    padding-bottom:20px; /*Espaço interno  em baixo*/
-    width: 1110px;
+    background:#FFFFFF;
+    height: 1150px;
+    width: 1000px;
     color: #4D4D4D;
 }
 
@@ -217,14 +219,8 @@ body main section.Texto article#TextoTres{
 body main section.Video {
             /*Alinhamento e tamanhos*/
             display: inline-block;
-            margin-top: 0px; /*Espaço externo no topo*/
-            margin-right: 120px;/*Espaco externo a direita*/
-            margin-bottom: 0px; /*Espaco externo em baixo*/
-            margin-left: 120px; /*Espaço externo a esquerda*/
-            padding-top: 0px; /*Espaço interno topo*/
-            padding-bottom:10px; /*Espaço interno  em baixo*/
-            height: 300px; /*tamanho do quadro*/
-            width: 1110px;
+            width: 1000px;
+            height: 350px;
     
             /*Cores e textos*/
         background-color:#F7C003;
@@ -233,8 +229,9 @@ body main section.Video {
 body main section.Video p#NomeVideo{
         /*Alinhamento*/
         display: flex;
-        padding: 0px 0px 0px 0px;
-        margin: 20px 0px 0px 30px;
+        margin: 0px;
+        padding: 20px;
+        width: 960px;
     
         /*Texto*/
         font-family: 'Bebas Neue', cursive;
@@ -255,15 +252,9 @@ body main section.Video div{
 
 footer{
     display: inline-block;
-    margin-top: 0px; /*Espaço externo no topo*/
-    margin-right: 120px;/*Espaco externo a direita*/
-    margin-bottom: 0px; /*Espaco externo em baixo*/
-    margin-left: 120px; /*Espaço externo a esquerda*/
-    padding-top: 0px; /*Espaço interno topo*/
-    padding-bottom:10px; /*Espaço interno  em baixo*/
-    height: 200px; /*tamanho do quadro*/
-    width: 1110px;
-    line-height: 15px;
+    height: 300px; /*tamanho do quadro*/
+    width: 1000px;
+    line-height: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
