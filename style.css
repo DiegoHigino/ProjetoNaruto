@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+*{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
 /*Corpo geral*/
 
 body{
@@ -27,7 +32,7 @@ body header{
     padding-bottom: 10px;
     min-width: 300px;
     max-width: 1000px;
-    /*gap: 620px;*/
+    gap: 500px;
     left: 70px;
     bottom: 70px;
     right: 70px;
