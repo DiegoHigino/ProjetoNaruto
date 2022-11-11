@@ -4,12 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-/*
-1 - Colocar hover no a
-2- transition duration no a
-3 - colocar margem em cima e embaixo dos parágrafos de 15px
-4 - text iddent 30px nos paragrafos*/
-
 *{
     margin: 0px;
     padding: 0px;
