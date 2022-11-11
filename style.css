@@ -306,6 +306,9 @@ footer p#Subtitulo{
     body main section.Video div{
         display:block;
     }
+    body header nav{
+        gap: 10px;
+    }
 }
 
 @media (max-width:400px) {
@@ -338,6 +341,9 @@ footer p#Subtitulo{
     body main section.Video div{
         display:block;
     }
+    body header nav{
+        gap: 10px;
+    }
 }
 @media (max-width:300px) {
     body main section.Naruto img#FotoNaruto{
@@ -368,5 +374,8 @@ footer p#Subtitulo{
     }
     body main section.Video div{
         display:block;
+    }
+    body header nav{
+        gap: 10px;
     }
 }
