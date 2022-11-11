@@ -4,139 +4,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+/*
+1 - Colocar hover no a
+2- transition duration no a
+3 - colocar margem em cima e embaixo dos parágrafos de 15px
+4 - text iddent 30px nos paragrafos*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 html{
+    font-size: 62.5%; /*A cada 1REM será considerado 10px*/
+    background-image: url("Imagens/backgroundNaruto.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size:cover;
 
 }
-body header{
-    width: 90%;
-    max-width: 1000px;
-}
-body main{
-    width: 90%;
-    max-width: 1000px;
-}
-body footer{
-    width: 90%;
-    max-width: 1000px;
-}
 
-
-
-/*
-body{
-    min-width: 300px;
-    max-width: 1400px;
-    min-height: 700px;
-    max-height: 1500px;
-    margin: auto;
-    padding: 20px;
-}*/
-
-/*
-body header{
-
-
+body header{ /*<-----------------------------------------------------Pai*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
-    min-width: 300px;
+    font-size: 2.0rem;
+
+    min-width: 320px;
     max-width: 1000px;
-    gap: 500px;
-    left: 70px;
-    bottom: 70px;
-    right: 70px;
-    
-
-    font-family: 'Bebas Neue', cursive;
-
+    margin: auto;
 }
-
-
-
-
 body header nav{
-
-        display: flex;
-        gap: 30px;
+    display: flex;
+    gap: 30px;
+    
+    font-family: 'Bebas Neue', cursive;
 }
 
 body header nav a{
-
     text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
-    color: #4D4D4D;
-    font-size: 20px;
-
+    color:#4D4D4D;
 }
 
 
+body main{ /*<-----------------------------------------------------Pai*/
+    font-size: 1.6rem;
+
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+}
+
 body main section.Naruto{
-
-        display: flex;
-        justify-content: space-between; 
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 300px;
-        width: 1000px;
-
-
+    display: flex;
+    justify-content: space-between;
     background-color:#F7C003;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    padding: 10px;
 }
 
 body main section.Naruto img#FotoNaruto{
-
     height: 250px;
     width: 250px;
-    padding: 30px;
 }
 
 body main section.Naruto div.Geral{
-    height: 250px;
-    width: 300px;
-    padding: 30px 10px 10px 10px;
-    justify-content: center;
-
+    line-height: 7rem;
 }
 
 body main section.Naruto div.Geral p#Um{
-    display: flex;
-    margin: 0px;
-    height: 55px;
-    width: 250px;
-    font-weight:bolder;
-
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-    color: #4D4D4D;
+    font-size: 4.0rem;
+    color:#4D4D4D;
+    font-weight: bolder;
 }
-body main section.Naruto div.Geral p#Dois{
-    display: flex;
-    margin: 0px;
-    height: 90px;
-    width: 300px;
-    font-weight:bolder;
-    align-items: center;
 
+body main section.Naruto div.Geral p#Dois{
     font-family: 'Bebas Neue', cursive;
-    font-size: 100px;
-    color: #4D4D4D;
+    font-size: 10.0rem;
+    color:#4D4D4D;
+    font-weight: bolder;
+
+    line-height: 9rem;
 }
 
 body main section.Naruto div.Geral p#Tres{
-    display: flex;
-    margin: 0px;
-    height: 90px;
-    width: 300px;
-    font-weight:bolder;
-    align-items: center;
-
-
     font-family: 'Bebas Neue', cursive;
-    font-size: 100px;
-    color: #4D4D4D;
+    font-size: 10.0rem;
+    color:#4D4D4D;
+    font-weight: bolder;
 }
-
 
 body main section.Naruto div#Separador{
     display: flex;
@@ -145,133 +106,272 @@ body main section.Naruto div#Separador{
     background-color: #4D4D4D;
 }
 
-
-
 body main section.Naruto div#Biografia{
 
 
     display: list-item;
     list-style: none;
-    margin: 20px 10px 10px 10px;
 
 
     color: #4D4D4D;
     font-family: 'Roboto Slab', serif;
-    line-height: 15px;
-
 }
 
-
-
-mark{
-    background-color:#ffff00; color: #4D4D4D;
+body main section.Naruto div#Biografia p{
+    line-height: 3rem;
 }
-
 
 body main section.Texto{
-
-    display: inline-block;
-    background:#FFFFFF;
-    height: 1150px;
-    width: 1000px;
     color: #4D4D4D;
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+    line-height: 3rem;
+    text-indent: 30px;
+    font-size: 15px;
+
+    background-color: white;
+
+    padding: 10px;
 }
-
-
 body main section.Texto article#TextoUm{
+    padding: 10px 0px 10px 0px;
 
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: justify;
-    line-height: 25px;
-
-
-    font-family: 'Roboto Slab', serif;
 }
-
 body main section.Texto article#TextoDois{
-
-        display: flex;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 10px;
-        text-align: justify;
-        line-height: 25px;
-        margin-right: 10px;
-    
-
-        font-family: 'Roboto Slab', serif;
-}
-
-body main section.Texto img{
     display: flex;
-    padding: 60px 10px 20px 30px;
-    height: 350px;
-    width: 350px;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
 }
 
-body main section.Texto article#TextoTres{
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: justify;
-    line-height: 25px;
-
-
-    font-family: 'Roboto Slab', serif;
+body main section.Texto article#TextoDois img{
+    padding: 10px 0px 10px 10px;
+    height: 200px;
+    width: 200px;
 }
 
+body main section.Video{
+    background-color: #F7C003;
+    position:relative;
+    padding: 10px;
 
-body main section.Video {
-
-            display: inline-block;
-            width: 1000px;
-            height: 350px;
-
-        background-color:#F7C003;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 body main section.Video p#NomeVideo{
+    font-family: 'Bebas Neue', cursive;
+    color: #4D4D4D;
+    font-size: 5rem;
 
-        display: flex;
-        margin: 0px;
-        padding: 20px;
-        width: 960px;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 50px;
-        color: #4D4D4D;
+    min-width: 320px;
+    max-width: 1000px;
 }
-
-body main section.Video div{
+body main section.Video div {
     display: flex;
-    gap: 30px;
-    justify-content: space-around;
-    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
 }
 
-footer{
-    display: inline-block;
-    height: 300px;
-    width: 1000px;
-    line-height: 20px;
+body footer{ /*--------------------------------------------------------------pai*/
+
+    line-height: 4rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
-background-color: #78323D;
+    background-color: #78323D;
+    min-width: 320px;
+    max-width: 1000px;
 }
 footer p#Titulo{
     font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
+    font-size: 3rem;
     color: #FFFFFF;
-    padding: 0px 0px 0px 0px;
-    margin: 20px 0px 0px 30px;
+    padding: 10px;
 }
 footer p#Subtitulo{
     font-family: 'Roboto Slab', serif;
     font-size: 15px;
     color: #FFFFFF;
-    padding: 0px 0px 0px 0px;
-    margin: 20px 0px 0px 30px;
+
+    padding: 10px;
 }
 
+/*Media Cards--------------------------------------------------------------*/
+@media (max-width:1000px) {
+
+    body main section.Naruto div#Biografia{
+        display: none;
+    }
+
+    body main section.Naruto div#Separador{
+        display: none;
+    }
+
+    body main section.Video div {
+        display: block;
+    }
+
+
+    body header{
+        width: 680px;
+        margin: auto;
+    }
+    body main{
+        width: 680px;
+        margin: auto;
+    }
+
+    body footer{
+        width: 680px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    body main section.Naruto{
+        justify-content: space-around;
+    }
+    body main section.Naruto div#Biografia{
+        display: none;
+    }
+    body main section.Naruto div#Separador{
+        display: none;
+    }
+
+    body main section.Texto article#TextoDois img{
+        display: none;
+    }
+    body header{
+        width: 580px;
+        margin: auto;
+    }
+    body main{
+        width: 580px;
+        margin: auto;
+    }
+
+    body footer{
+        width: 580px;
+        margin: auto;
+    }
+    body main section.Video div {
+        display: block;
+    }
+}
+@media (max-width:600px) {
+    body main section.Naruto img#FotoNaruto{
+        display: none;
+    }
+    body main section.Texto article#TextoDois img{
+        display: none;
+    }
+
+    body main section.Texto article#TextoDois img{
+        display: none;
+    }
+
+    body header{
+        width: 490px;
+        margin: auto;
+    }
+    body main{
+        width: 490px;
+        margin: auto;
+    }
+
+    body footer{
+        width: 490px;
+        margin: auto;
+    }
+    body main section.Video div{
+        display:block;
+    }
+}
+
+@media (max-width:500px) {
+    body main section.Naruto img#FotoNaruto{
+        display: none;
+    }
+    body main section.Texto article#TextoDois img{
+        display: none;
+    }
+    body header{
+        width: 450px;
+        margin: auto;
+    }
+    body main{
+        width: 450px;
+        margin: auto;
+    }
+
+    body footer{
+        width: 450px;
+        margin: auto;
+    }
+    body main section.Video div{
+        display:block;
+    }
+}
+
+@media (max-width:400px) {
+    body main section.Naruto img#FotoNaruto{
+        display: none;
+    }
+    body main section.Texto article#TextoDois img{
+        display: none;
+    }
+    body main section.Naruto div#Biografia{
+        display: none;
+    }
+
+    body main section.Naruto div#Separador{
+        display: none;
+    }
+    body header{
+        width: 350px;
+        margin: auto;
+    }
+    body main{
+        width: 350px;
+        margin: auto;
+    }
+
+    body footer{
+        width: 350px;
+        margin: auto;
+    }
+    body main section.Video div{
+        display:block;
+    }
+}
+@media (max-width:300px) {
+    body main section.Naruto img#FotoNaruto{
+        display: none;
+    }
+    body main section.Texto article#TextoDois img{
+        display: none;
+    }
+    body main section.Naruto div#Biografia{
+        display: none;
+    }
+
+    body main section.Naruto div#Separador{
+        display: none;
+    }
+    body header{
+        width: 250px;
+        margin: auto;
+    }
+    body main{
+        width: 250px;
+        margin: auto;
+    }
+
+    body footer{
+        width: 250px;
+        margin: auto;
+    }
+    body main section.Video div{
+        display:block;
+    }
+}
